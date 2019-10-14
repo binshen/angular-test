@@ -5,6 +5,12 @@
     <title>DashboardTitle</title>
 </head>
 <body>
-  Dashboard
+  <h1>Dashboard</h1>
+  <hr>
+  <div>
+    <input [(ngModel)]="user.name">
+    <input [(ngModel)]="user.age">
+    <button (click)="onClickMe()">点我!</button>
+  </div>
 </body>
 </html>

@@ -5,6 +5,28 @@
     <title>Title</title>
 </head>
 <body>
-123123213
+  <h1>{{title}}</h1>
+  <div>
+    <li *ngFor="let site of sites">
+      {{ site }}
+    </li>
+  </div>
+
+  <hr>
+
+  <button (click)="onClickMe()">点我!</button>
+  {{clickMessage}}
+
+  <hr>
+
+  <input #box (keyup)="onKey(box.value)">
+  <p>{{inputValue}}</p>
+
+  <hr>
+
+  <p>The sum of 1 + 1 is {{1 + 1}}</p>
+
+  <hr>
+  <img [src]="imageUrl">
 </body>
 </html>
